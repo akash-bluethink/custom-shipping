@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Custom, Inc. All rights reserved.
+ * @package Custom_Shipping
+ * @date 2020.09  
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+        <carriers>
+            <customshipping>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+				<model>Custom\Shipping\Model\Carrier\CustomShipping</model>
+                <name>Custom Shipping</name>
+                <price>5.00</price>
+                <title>Custom Shipping</title>
+               <specificerrmsg>Custom Shipping is not available for your area. Please contact us.</specificerrmsg>
+            </customshipping>
+            <!-- carrier-config -->
+        </carriers>
+    </default>
+</config>

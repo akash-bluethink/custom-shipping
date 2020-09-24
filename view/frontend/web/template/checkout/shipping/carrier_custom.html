@@ -1,0 +1,28 @@
+<style type="text/css">
+	.my-carrier-custom-block-wrapper-lable{
+		font-size: 13px;
+	}
+	.custom_shipping_address_type{
+		width: 10px;
+	}
+	#my-carrier-custom-block-wrapper{
+		padding-left: 25px;
+	}
+	#note_for_custom_shipping{
+		font-size: 12px;
+	} 
+
+</style>
+<!-- ko if: ( selectedMethod() == "customshipping_customshipping") -->
+<div id="my-carrier-custom-block-wrapper">
+    <label class="my-carrier-custom-block-wrapper-lable">
+    	<input type="radio" class="custom_shipping_address_type" name="custom_shipping_address_type" value="home address" checked>
+    	Home Address
+	</label>
+    <br>
+    <label class="my-carrier-custom-block-wrapper-lable">
+    	<input type="radio" class="custom_shipping_address_type" name="custom_shipping_address_type" value="office address">
+    	Office Address
+	</label>
+</div>
+<!-- /ko -->
